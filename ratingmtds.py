@@ -3,8 +3,7 @@
 #@author: Ofe Segun
 
 # importing necessary libraries
-```
-import pandas as pd  
+```import pandas as pd  
 import numpy as np
 import random as rd
 ```
@@ -300,4 +299,5 @@ window.mainloop()
 #https://www.journaldev.com/45109/normalize-data-in-python # helpful to give insight to renormalizing dataset
 #https://www.geeksforgeeks.org/python-tkinter-how-to-display-a-table-editor-in-a-text-widget/?ref=rp #GUI
 #https://www.webucator.com/article/python-color-constants-module/ # Choosing Colors
+
 
