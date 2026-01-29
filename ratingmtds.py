@@ -1,6 +1,6 @@
 ### Created on Mon Apr 11 18:53:10 2022
 
-#@author: Ofe Segun
+# @author: Ofe Segun
 
 # importing necessary libraries
 ```
@@ -301,6 +301,35 @@ window.mainloop()
 #https://www.geeksforgeeks.org/python-tkinter-how-to-display-a-table-editor-in-a-text-widget/?ref=rp #GUI
 #https://www.webucator.com/article/python-color-constants-module/ # Choosing Colors
 
+
+### Created on Mon Apr 11 18:53:10 2022
+
+# @author: Ofe Segun
+
+# importing necessary libraries
+import pandas as pd  
+import numpy as np
+import random as rd
+
+# First Method
+
+df = pd.read_excel('Exce.xlsx', sheet_name="Sheet1") # importing the excel sheet
+bab = df.values.tolist() # Put the data in a list
+
+# Next, we summed over the rating for each columns by taking each list 
+# and the corresponding column values and put the sum into a list 
+
+torank = [sum([bab[j][i] for j in range(len(bab))]) for i in range(len(bab[0]))]
+
+names = df.columns
+chart = [[n] for n in names]
+indy = list(range(len(names)))
+
+rankindex = [na for _, na in sorted(zip(torank, indy))]
+
+chart = [chart[j] + [rankindex[j] + 1] for j in range(len(chart))]
+
+order = [names[j] for j in rankindex]
 
 
 
