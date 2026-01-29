@@ -3,10 +3,11 @@
 #@author: Ofe Segun
 
 # importing necessary libraries
+```
 import pandas as pd  
 import numpy as np
 import random as rd
-
+```
 # First Method
 
 df = pd.read_excel('Exce.xlsx', sheet_name="Sheet1") # importing the excel sheet
@@ -299,3 +300,4 @@ window.mainloop()
 #https://www.journaldev.com/45109/normalize-data-in-python # helpful to give insight to renormalizing dataset
 #https://www.geeksforgeeks.org/python-tkinter-how-to-display-a-table-editor-in-a-text-widget/?ref=rp #GUI
 #https://www.webucator.com/article/python-color-constants-module/ # Choosing Colors
+
